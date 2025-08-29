@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energy-Saving Classrooms</title>
+  <style>
+    /* Simple, readable styling */
+    :root { font-family: system-ui, Arial, sans-serif; line-height: 1.5; }
+    body { margin: 0; background:#f7f7fb; color:#222; }
+    header, footer { background:#1e293b; color:#fff; padding:16px 20px; }
+    main { padding: 20px; max-width: 900px; margin: 0 auto; }
+    h1, h2 { margin: 0.4em 0; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:16px; margin:12px 0; }
+    .grid { display: grid; gap: 12px; }
+    @media (min-width: 700px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+    ul { padding-left: 1.2rem; }
+    li + li { margin-top: 6px; }
+    .small { font-size: 0.95rem; color:#475569; }
+    label { display: block; margin: 6px 0; }
+    input[type="checkbox"] { transform: scale(1.1); margin-right: 8px; vertical-align: middle; }
+    table { width:100%; border-collapse: collapse; }
+    th, td { border:1px solid #e5e7eb; padding:8px; text-align:left; }
+    th { background:#f1f5f9; }
+    .badge { display:inline-block; padding:2px 8px; border-radius:999px; background:#e2e8f0; font-size:0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Energy-Saving Classrooms</h1>
+    <p class="small">Simple steps to reduce power use, save money, and help the planet.</p>
+  </header>
+
+  <main>
+    <!-- Why it matters -->
+    <section class="card" aria-labelledby="why">
+      <h2 id="why">Why Save Energy?</h2>
+      <p>
+        Classrooms use lights, fans/ACs, computers, and projectors. Small changes in habits
+        and setup reduce bills, cut carbon emissions, and keep rooms comfortable.
+      </p>
+      <p class="badge" aria-label="Quick win tip">Quick wins inside</p>
+    </section>
+
+    <!-- Quick tips -->
+    <section class="grid two">
+      <div class="card" aria-labelledby="habits">
+        <h2 id="habits">Daily Habits</h2>
+        <ul>
+          <li>Use daylight: open curtains and sit near windows when possible.</li>
+          <li>Turn off lights, fans, AC, and projectors when leaving the room.</li>
+          <li>Set AC to 24–26&nbsp;°C (or use fans first if weather allows).</li>
+          <li>Close doors/windows when AC is on to keep cool air inside.</li>
+          <li>Unplug chargers and devices not in use.</li>
+        </ul>
+      </div>
+      <div class="card" aria-labelledby="setup">
+        <h2 id="setup">Room Setup</h2>
+        <ul>
+          <li>Use LED bulbs or tube lights (they use less power than CFL/halogen).</li>
+          <li>Seat plan: use front rows to reduce extra lighting needs.</li>
+          <li>Place projectors/screens away from direct sunlight to use lower brightness.</li>
+          <li>Label switches so anyone can quickly turn off the right ones.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Device use -->
+    <section class="grid two">
+      <div class="card" aria-labelledby="devices">
+        <h2 id="devices">Smart Device Use</h2>
+        <ul>
+          <li>Enable power-saving mode on PCs and laptops.</li>
+          <li>Dim projector brightness when lights are off.</li>
+          <li>Shut down computers after class; avoid long idle screens.</li>
+          <li>Use shared charging stations; avoid always-on extension boards.</li>
+        </ul>
+      </div>
+      <div class="card" aria-labelledby="maintenance">
+        <h2 id="maintenance">Maintenance</h2>
+        <ul>
+          <li>Clean fans, AC filters, and projector vents regularly.</li>
+          <li>Report flickering lights and noisy fans; they waste energy.</li>
+          <li>Replace old appliances with 5-star rated ones when possible.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Simple checklist -->
+    <section class="card" aria-labelledby="checklist">
+      <h2 id="checklist">End-of-Class Checklist</h2>
+      <form>
+        <label><input type="checkbox" /> Lights off (if daylight or room empty)</label>
+        <label><input type="checkbox" /> Fans/AC off and windows adjusted</label>
+        <label><input type="checkbox" /> Projector and speakers off</label>
+        <label><input type="checkbox" /> Computers shut down, chargers unplugged</label>
+        <label><input type="checkbox" /> Doors closed; switches labeled clearly</label>
+      </form>
+      <p class="small">Tip: Print this section and stick it near the door.</p>
+    </section>
+
+    <!-- Example savings (illustrative) -->
+    <section class="card" aria-labelledby="savings">
+      <h2 id="savings">Illustrative Savings (per classroom)</h2>
+      <table aria-describedby="note">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>What it does</th>
+            <th>Typical saving</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Switch to LED lighting</td>
+            <td>Lower wattage for same brightness</td>
+            <td>~40–60% vs. CFL/halogen</td>
+          </tr>
+          <tr>
+            <td>Set AC to 24–26&nbsp;°C</td>
+            <td>Reduces compressor runtime</td>
+            <td>~3–5% per °C higher setting</td>
+          </tr>
+          <tr>
+            <td>Turn off idle projectors</td>
+            <td>Cuts high standby draw</td>
+            <td>~50–150 W while off</td>
+          </tr>
+          <tr>
+            <td>Use daylight</td>
+            <td>Fewer lights needed</td>
+            <td>~30–80 W per light avoided</td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="note" class="small">Values are examples; actual savings depend on devices and usage.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Make energy saving a class habit—every switch counts.</p>
+  </footer>
+</body>
+</html>
